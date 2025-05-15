@@ -1,9 +1,9 @@
 import { View, Text, StyleSheet } from 'react-native';
 
-export default function CategoryScreen() {
+export default function ProductList() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>欢迎来到分类页面</Text>
+      <Text style={styles.text}>这是产品列表页</Text>
     </View>
   );
 }
@@ -14,8 +14,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  title: {
-    fontSize: 24,
+  text: {
+    fontSize: 20,
     fontWeight: 'bold',
   },
 });
