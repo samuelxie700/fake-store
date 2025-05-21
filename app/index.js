@@ -7,8 +7,8 @@ export default function Index() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      router.replace('/categories'); // 延迟跳转，保证布局已加载
-    }, 100); // 0.1秒后跳转
+      router.replace('/categories');
+    }, 100); // wait until Layout is mounted
 
     return () => clearTimeout(timer);
   }, []);
